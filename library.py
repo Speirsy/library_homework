@@ -24,7 +24,10 @@ library = {
     ]
 }
 
-# TODO - Print welcome statement including library name
+# Done - Print welcome statement including library name
+print("The", library["name"], "bids you a warm welcome!")
+
+quit
 
 option = ""
 while option != "q":
@@ -39,11 +42,20 @@ while option != "q":
 
     if option == "1":
         print("Listing all books...")
-        # TODO - List all books
+        # Done - List all books
+        print(library["books"])
+        #Bare minimum. Would be good to extract author and title to be more presentable.
 
     if option == "2":
         print("Searching for a book by title...")
         # TODO - Search for a book by title
+
+        book_title = input( "What is the title of the book you wish to search?")
+        if book_title == library["books"][0]:
+            print("yes")
+        else:
+            print("no")
+
 
     if option == "3":
         print("Adding a book...")
