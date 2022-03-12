@@ -52,10 +52,14 @@ while option != "q":
 
         book_title = input( "What is the title of the book you wish to search?")
         if book_title == library["books"][0]:
-            print("yes")
+            print("Book found")
         else:
-            print("no")
-
+            print("Book not found")
+# You definitely need a loop, you should check each book! 
+# The rest of the logic (input/if statement) is perfect, 
+# but the if/else should be done in a for loop :slightly_smiling_face:
+for chicken in chickens:
+     print(f'{chicken["name"]} is {chicken["age"]}')
 
     if option == "3":
         print("Adding a book...")
