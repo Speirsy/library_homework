@@ -48,7 +48,7 @@ while option != "q":
         
     
         for book in library["books"]:
-         print(f"{book['author']} by {book['title']}")
+         print(f"{book['title']} by {book['author']}")
 
     if option == "2":
         print("Searching for a book by title...")
@@ -96,7 +96,7 @@ while option != "q":
                 print("by")
                 print(book["author"])
                 print("is removed")
-                
+                # tried this on one line but couldn't find the glitch
         
             # print(f"{book['title']} by {book['author']} is removed")        
                 #not ideal removing book by it's title but I'll take it!
