@@ -50,6 +50,8 @@ while option != "q":
         for book in library["books"]:
          print(f"{book['title']} by {book['author']}")
 
+         #I found this in the "chickens" notes. What does the f do?
+
     if option == "2":
         print("Searching for a book by title...")
         # TODO - Search for a book by title
@@ -64,9 +66,7 @@ while option != "q":
 
 
     
-# You definitely need a loop, you should check each book! 
-# The rest of the logic (input/if statement) is perfect, 
-# but the if/else should be done in a for loop :slightly_smiling_face:
+
 
 
     if option == "3":
@@ -82,7 +82,8 @@ while option != "q":
         print("Removing a book...") 
         # TODO - Remove a book
         # print books list adding index number. Can't figure this out. 
-        # idea being to ask user for a number to select the item (book) to be removed.
+        # idea being to ask user for a number to select the item (book) to be removed. Oh well...
+
         for book in library["books"]:
          print(f"{book['title']} by {book['author']}")
         
@@ -96,14 +97,16 @@ while option != "q":
                 print("by")
                 print(book["author"])
                 print("is removed")
-                # tried this on one line but couldn't find the glitch
+                # tried this on one line but couldn't find the glitch. 
         
-            # print(f"{book['title']} by {book['author']} is removed")        
+                 
                 #not ideal removing book by it's title but I'll take it!
 
     if option == "5":
         print("Updating a book...")
         # TODO - Update a book
         book_ask = input( "What is the title of the book you wish to update?")
+        
+        # bed
 
 
